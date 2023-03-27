@@ -41,7 +41,7 @@ public class Program
         var usersResponse = JsonSerializer.Deserialize<StackExchangeResponse<StackExchangeUser>>(response, options);
 
         // Output the first user's display name and reputation
-        var firstUser = usersResponse.Items[0];
-        Console.WriteLine($"User: {firstUser.DisplayName}, Reputation: {firstUser.Reputation}");
+        var firstUser = usersResponse?.Items[0];
+        Console.WriteLine($"User: {firstUser?.DisplayName}, Reputation: {firstUser?.Reputation}");
     }
 }
