@@ -1,0 +1,12 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
